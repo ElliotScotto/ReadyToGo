@@ -50,7 +50,7 @@ function App() {
               </div>
               <div
                 onClick={() => {
-                  setSwitch2(switch2 === false);
+                  setSwitch2(false);
                 }}
                 className={`btn-Off ${
                   switch2 === false ? "active" : "inactive"
@@ -62,7 +62,7 @@ function App() {
             <div className="level3">
               <div
                 onClick={() => {
-                  setSwitch3(switch3 === true);
+                  setSwitch3(true);
                 }}
                 className={`btn-On ${
                   switch3 === true ? "active" : "inactive"
@@ -72,7 +72,7 @@ function App() {
               </div>
               <div
                 onClick={() => {
-                  setSwitch3(switch3 === false);
+                  setSwitch3(false);
                 }}
                 className={`btn-Off ${
                   switch3 === false ? "active" : "inactive"
