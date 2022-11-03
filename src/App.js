@@ -5,13 +5,10 @@ function App() {
   const [switch1, setSwitch1] = useState(false);
   const [switch2, setSwitch2] = useState(false);
   const [switch3, setSwitch3] = useState(false);
-  const handleClick = () => {
-    return alert("Cliqué !");
-  };
+  // if (switch1 && switch2 && switch2)
   return (
     <>
       <header className="App-header">Ready To Go</header>
-
       <main>
         <div className="global-app-set">
           <div className="app-block-left">
@@ -83,9 +80,53 @@ function App() {
             </div>
           </div>
           <div className="app-block-right">
-            <div className="noway-Btn">No way !</div>
+            {switch1 && switch2 && switch3 ? (
+              <div
+                style={{
+                  backgroundColor: "#46ac4a",
+                  color: "white",
+                  borderRadius: "4px",
+                  padding: "20px 10px",
+                }}
+              >
+                <p>Go !</p>
+              </div>
+            ) : (
+              <div
+                style={{
+                  backgroundColor: "#d34848",
+                  color: "white",
+                  borderRadius: "4px",
+                  padding: "20px 10px",
+                }}
+              >
+                <p>No Way !</p>
+              </div>
+            )}
           </div>
         </div>
+        {!switch1 && !switch2 && !switch3 ? (
+          <div
+            className="emergency-Btn"
+            style={{
+              backgroundColor: "red",
+              color: "white",
+              borderRadius: "20px",
+              padding: "20px 10px",
+            }}
+          >
+            <p>EMERGENCY</p>
+          </div>
+        ) : (
+          <div
+            className="emergency-Btn"
+            style={{
+              visibility: "hidden",
+            }}
+          >
+            <p>Emergency</p>
+          </div>
+        )}
       </main>
       <footer>
         Made with<span> React </span>at<span> Le Reacteur </span>by

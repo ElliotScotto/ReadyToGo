@@ -13,14 +13,9 @@ main {
   justify-content: center;
   align-items: center;
   gap: 200px;
+  margin-bottom: 50px;
 }
-.noway-Btn {
-  background-color: #d34848;
-  color: white;
-  font-size: 20px;
-  padding: 20px 10px;
-  border-radius: 3px;
-}
+
 .level1,
 .level2,
 .level3 {
@@ -42,6 +37,22 @@ main {
 .inactive {
   background-color: white;
 }
+.app-block-right {
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+}
+.emergency-Btn {
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   text-align: center;
 }
